@@ -1,0 +1,24 @@
+---
+nfs_exports:
+  - dir: /volume0/sys.homeipa
+    mode: "0755"
+    clients:
+      "*":
+        - rw
+        - "sec=krb5:krb5i:krb5p"
+
+  - dir: /volume0/sys.hosting.user
+    mode: "0755"
+    clients:
+      "theweb01.void":
+        - rw
+        - sync
+        - "sec=sys"
+
+  - dir: /volume0/sys.hosting.srv
+    mode: "0755"
+    clients:
+      "theweb01.void":
+        - rw
+        - sync
+        - "sec=sys"

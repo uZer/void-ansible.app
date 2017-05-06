@@ -1,0 +1,28 @@
+---
+## NFSSERVER
+- src: uZer.nfsserver
+  name: ext.uzer.nfsserver
+  version: master
+
+## KEEPALIVED
+- src: uZer.keepalived
+  name: ext.uzer.keepalived
+  version: master
+
+## CRONTAB WITH VARS AND DELETION
+- src: uZer.crontab
+  name: ext.uzer.crontab
+  version: master
+
+## LETSENCRYPT CERTBOT
+- src: thefinn93.letsencrypt
+  name: ext.thefinn93.letsencrypt
+  version: master
+
+## UNBOUND
+- src: reallyenglish.unbound
+  name: ext.reallyenglish.unbound
+  version: master
+
+# vim:ft=ansible:
+
